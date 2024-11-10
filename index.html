@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>working with the form</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="wrapper">
+        <div class="user-panel">
+            <h1 class="title">
+                Управление:
+            </h1>
+            <div class="user-panel__wrapper">
+                <div class="user-panel__wrapper-circle">
+                    <div class="user-panel__circle"></div>
+                    <div class="user-panel__text"></div>
+                </div>
+                <button type="button" class="btn user-panel__exit">🚪 Выход 🗿</button>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div class="subscribe__wrapper">
+                <h2 class="title">
+                    Регистрация:
+                </h2>
+                <form type="post" action="#" class="subscribe__form">
+                    <div class="subscribe__wrapper-input">
+                        <label for="name" class="subscribe__label">Имя</label>
+                        <input type="text" name="name" class="subscribe__input" id="name" placeholder="Enter your name" data-name-registration tabindex="1" required>
+                    </div>
+                    <div class="subscribe__wrapper-input">
+                        <label for="pas" class="subscribe__label">Пароль</label>
+                        <input current-password type="password" name="pas" class="subscribe__input" id="pas" placeholder="Enter your number" data-password-registration tabindex="2" required>
+                    </div>
+                    <button disabled class="btn subscribe__btn" type="submit" data-btn-registration tabindex="3">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div class="subscribe__wrapper">
+                <h2 class="title">
+                    Вход:
+                </h2>
+                <form type="post" action="#" class="subscribe__form">
+                    <div class="subscribe__wrapper-input">
+                        <label for="name2" class="subscribe__label">Имя</label>
+                        <input type="text" name="name" class="subscribe__input" id="name2" placeholder="Enter your name" data-name-authorization tabindex="1" required>
+                    </div>
+                    <div class="subscribe__wrapper-input">
+                        <label for="pass" class="subscribe__label">Пароль</label>
+                        <input type="password" name="pas" class="subscribe__input" id="pass" placeholder="Enter your number" data-password-authorization tabindex="2" required>
+                    </div>
+                    <button disabled class="btn subscribe__btn" type="submit" data-btn-authorization tabindex="3">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/script.js"></script>
+</body>
+</html>
