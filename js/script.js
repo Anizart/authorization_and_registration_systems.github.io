@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
             alert('Вы вышли из аккаунта');
             location.reload();
         } else {
-            alert('С начало войдите, чтоб выйти ツ');
+            alert('Сначало войдите, чтоб выйти ツ');
         }
     });
 
